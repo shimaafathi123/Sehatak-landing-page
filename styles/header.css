@@ -116,6 +116,7 @@ header {
         background-color: rgb(50, 98, 174); 
         text-align: center;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for dropdown */
+        z-index: 900;
     }
 
     .header-middle-section.active a {
