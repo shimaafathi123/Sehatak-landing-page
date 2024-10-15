@@ -44,8 +44,6 @@ header {
 
 .header-right-section {
     padding-right: 25px;
-    display: flex; /* Ensure the header-right-section is flex for alignment */
-    align-items: center; /* Center the items vertically */
 }
 
 .profile-button, .lang-button {
@@ -60,7 +58,6 @@ header {
     text-align: center;
     margin-left: 10px;
 }
-
 .profile-button:hover, .lang-button:hover {
     background-color: white;
     color: rgb(50, 98, 174);
@@ -78,7 +75,7 @@ header {
         display: flex;
         align-items: center;
     }
-
+    
     .header-middle-section {
         display: none;
     }
@@ -97,16 +94,18 @@ header {
     }
 
     .header-right-section {
-        display: flex; /* Ensure buttons are displayed in a row */
-        align-items: center; 
-        padding-right: 10px; /* Adjust right padding */
+        text-align: center; 
     }
 
-    .profile-button, .lang-button {
-        width: 70px; /* Adjust width for mobile */
-        padding: 8px 10px; /* Slightly reduced padding */
-        font-size: 8px; /* Adjust font size for mobile */
-        margin-left: 5px; /* Reduced margin for tighter spacing */
+    .header-right-section .profile-button .lang-button {
+        display: inline-block; 
+        margin: 0 auto; 
+    }
+
+    .header-right-section .profile-button .l {
+        width: auto; 
+        padding: 0.3rem 0.6rem; 
+        font-size: 0.8rem; 
     }
 
     .header-middle-section.active {
@@ -117,15 +116,15 @@ header {
         width: 100%;
         background-color: rgb(50, 98, 174); 
         text-align: center;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for dropdown */
         z-index: 900;
     }
 
     .header-middle-section.active a {
         display: block;
         padding: 10px 0;
-        color: white; 
-        text-decoration: none; 
+        color: white; /* Link color */
+        text-decoration: none; /* Remove underline */
     }
 
     .header-middle-section.active a:hover {
@@ -139,4 +138,8 @@ header {
         align-items: center;
         padding-top: 5px;
     }
+}
+.header-right-section{
+    display: flex;
+    align-items: center;
 }

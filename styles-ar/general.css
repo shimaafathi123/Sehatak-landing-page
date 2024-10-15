@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+body{
+    background-color: rgb(50, 98, 174);
+    height: 3000px;
+    text-align: right;
+    direction: rtl; 
+}
+a{
+    text-decoration: none;
+}
+

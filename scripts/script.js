@@ -31,15 +31,3 @@ window.addEventListener('scroll', function() {
       header.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
   }
 });
-function switchLanguage(lang) {
-  const englishElements = document.querySelectorAll('.en');
-  const arabicElements = document.querySelectorAll('.arabic');
-
-  if (lang === 'en') {
-      englishElements.forEach(el => el.classList.remove('hidden'));
-      arabicElements.forEach(el => el.classList.add('hidden'));
-  } else {
-      arabicElements.forEach(el => el.classList.remove('hidden'));
-      englishElements.forEach(el => el.classList.add('hidden'));
-  }
-}

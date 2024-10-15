@@ -1,0 +1,145 @@
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    height: 70px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease; 
+}
+
+.logo {
+    filter: invert(58%) sepia(61%) saturate(464%) hue-rotate(175deg) brightness(91%) contrast(90%);
+    width: 70px;
+    height: 70px;
+    padding-right: 25px;
+}
+
+.header-left-section {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.header-middle-section {
+    display: flex;
+}
+
+.element {
+    padding-right: 20px;
+    color: rgb(50, 98, 174);
+    opacity: 0.7;
+    transition: opacity 0.5s;
+    font-size: 15px;
+}
+
+.element:hover {
+    opacity: 1;
+}
+
+.header-right-section {
+    padding-left: 25px;
+}
+
+.profile-button, .lang-button {
+    background-color: rgb(50, 98, 174);
+    border: none;
+    color: white;
+    width: 100px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+    margin-left: 10px;
+}
+.profile-button:hover, .lang-button:hover {
+    background-color: white;
+    color: rgb(50, 98, 174);
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        align-items: center;
+    }
+    
+    .header-middle-section {
+        display: none;
+    }
+
+    .hamburger {
+        display: block; 
+        flex: 1; 
+        font-size: 24px; 
+        padding-right: 10px;
+    }
+
+    .logo {
+        width: 50px; 
+        height: 50px; 
+        padding-right: 15px; 
+    }
+
+    .header-right-section {
+        text-align: center; 
+    }
+
+    .header-right-section .profile-button .lang-button {
+        display: inline-block; 
+        margin: 0 auto; 
+    }
+
+    .header-right-section .profile-button .l {
+        width: auto; 
+        padding: 0.3rem 0.6rem; 
+        font-size: 0.8rem; 
+    }
+
+    .header-middle-section.active {
+        display: block;
+        position: absolute;
+        top: 70px; 
+        left: 0;
+        width: 100%;
+        background-color: rgb(50, 98, 174); 
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for dropdown */
+        z-index: 900;
+    }
+
+    .header-middle-section.active a {
+        display: block;
+        padding: 10px 0;
+        color: white; /* Link color */
+        text-decoration: none; /* Remove underline */
+    }
+
+    .header-middle-section.active a:hover {
+        background-color: white; 
+        color: rgb(50, 98, 174);
+    }
+
+    .header-left-section {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        padding-top: 5px;
+    }
+}
+.header-right-section{
+    display: flex;
+    align-items: center;
+}

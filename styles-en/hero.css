@@ -38,7 +38,7 @@
 
 .title {
     color: rgb(50, 98, 174);
-    font-size: 40px;
+    font-size: 40px; /* Default font size for desktop */
     font-weight: bold;
     padding-left: 2px;
     letter-spacing: 4px; 
@@ -79,33 +79,34 @@
     padding-left: 5px;
 }
 
+/* Responsive Styles for Mobile */
 @media (max-width: 768px) {
     .home-section {
-        padding-top: 70px; 
+        padding-top: 70px; /* Adjust padding for smaller screens */
     }
 
     .title {
-        font-size: 24px; 
-        letter-spacing: 2px; 
+        font-size: 24px; /* Smaller font size for mobile */
+        letter-spacing: 2px; /* Adjust letter spacing */
         animation: fadeInUp 0.5s ease-in-out; 
     }
 
     .home-left-side {
-        padding-left: 20px; 
-        padding-top: 70px; 
+        padding-left: 20px; /* Less padding on the left */
+        padding-top: 70px; /* Less padding on top */
     }
 
     .start-button {
-        width: 120px; 
-        font-size: 14px; 
-        padding: 8px 10px; 
+        width: 120px; /* Adjust width for mobile */
+        font-size: 14px; /* Smaller font size for mobile */
+        padding: 8px 10px; /* Adjust padding for mobile */
         animation: fadeInUp 1s ease-in-out; 
     }
 
     .sentence {
-        font-size: 16px; 
-        padding-left: 0; 
-        padding-bottom: 20px; 
+        font-size: 16px; /* Smaller font size for mobile */
+        padding-left: 0; /* No padding on left for mobile */
+        padding-bottom: 20px; /* Adjust bottom padding */
         animation: fadeInUp 1.5s ease-in-out; 
     }
 }

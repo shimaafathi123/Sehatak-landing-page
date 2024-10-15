@@ -1,0 +1,113 @@
+@keyframes fadeInUp {
+    0% {
+        opacity: 0; 
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+.home-section {
+    position: relative; 
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;  
+    background-repeat: no-repeat;
+    height: 100vh; 
+    padding-top: 140px;
+    color: white; 
+}
+
+.home-section::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2); 
+    z-index: 1;
+}
+
+.home-section div {
+    position: relative; 
+    z-index: 2; 
+}
+
+.title {
+    color: rgb(50, 98, 174);
+    font-size: 50px; /* Default font size for desktop */
+    font-weight: bold;
+    padding-left: 100px;
+    animation: fadeInUp 0.5s ease-in-out; 
+}
+
+.home-left-side {
+    
+    padding-left: 55px;
+    padding-top: 195px;
+    text-align: left;
+}
+
+.start-button {
+    background-color: rgb(50, 98, 174);
+    border: none;
+    color: white;
+    width: 150px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    animation: fadeInUp 1s ease-in-out; 
+}
+
+.start-button:hover {
+    background-color: white;
+    color: rgb(50, 98, 174);
+    font-weight: bolder;
+}
+
+.sentence {
+    padding-left: 200px;
+    padding-bottom: 35px;
+    font-size: 20px;
+    animation: fadeInUp 1.5s ease-in-out; 
+}
+
+.home-button {
+    padding-left: 330px;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+    .home-section {
+        padding-top: 70px; /* Adjust padding for smaller screens */
+    }
+
+    .title {
+        font-size: 24px; /* Smaller font size for mobile */
+        letter-spacing: 2px; /* Adjust letter spacing */
+        animation: fadeInUp 0.5s ease-in-out; 
+    }
+
+    .home-left-side {
+        padding-left: 20px; /* Less padding on the left */
+        padding-top: 70px; /* Less padding on top */
+    }
+
+    .start-button {
+        width: 120px; /* Adjust width for mobile */
+        font-size: 14px; /* Smaller font size for mobile */
+        padding: 8px 10px; /* Adjust padding for mobile */
+        animation: fadeInUp 1s ease-in-out; 
+    }
+
+    .sentence {
+        font-size: 16px; /* Smaller font size for mobile */
+        padding-left: 0; /* No padding on left for mobile */
+        padding-bottom: 20px; /* Adjust bottom padding */
+        animation: fadeInUp 1.5s ease-in-out; 
+    }
+}
