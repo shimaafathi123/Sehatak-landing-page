@@ -5,9 +5,11 @@ elements.forEach((element) => {
         elements.forEach((el) => {
             el.style.color = '';   
             el.style.fontWeight = '';  
+            el.style.opacity='';
    
         });
-        this.style.color = '#D2E0FB';  
+        this.style.color = 'rgb(50, 98, 174)';  
         this.style.fontWeight = 'bold';  
+        this.style.opacity='1';
     });
 });
