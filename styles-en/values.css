@@ -1,0 +1,46 @@
+.values-section {
+    padding: 40px 20px;
+    background-color: #e9f4f9; /* Soft blue background */
+}
+
+.values-content {
+    max-width: 800px; /* Limit the width for better readability */
+    margin: auto; /* Center the content */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    background-color: #ffffff; /* White background for content */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.values-title {
+    font-size: 32px; /* Larger title for emphasis */
+    margin-bottom: 20px;
+    color: #007BFF; /* Primary color for title */
+    text-align: center; /* Center align title */
+}
+
+.intro-text {
+    font-size: 18px; /* Introductory text size */
+    color: #333; /* Dark text color for readability */
+    text-align: center; /* Center align intro text */
+    margin-bottom: 30px; /* Space below intro */
+}
+
+.value-item {
+    margin-bottom: 20px; /* Space between values */
+    padding: 15px;
+    border-left: 4px solid #007BFF; /* Blue left border for emphasis */
+    background-color: #f0f8ff; /* Light background for each value */
+    border-radius: 5px; /* Slightly rounded corners */
+}
+
+.value-item h3 {
+    color: #007BFF; /* Consistent color for subheadings */
+    margin-bottom: 10px; /* Space below subheading */
+}
+
+.value-item p {
+    font-size: 16px; /* Readable text size */
+    color: #555; /* Soft dark color for body text */
+    line-height: 1.6; /* Improved line spacing */
+}
