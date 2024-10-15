@@ -44,20 +44,24 @@ header {
 
 .header-right-section {
     padding-right: 25px;
+    display: flex; /* Ensure the header-right-section is flex for alignment */
+    align-items: center; /* Center the items vertically */
 }
 
-.profile-button {
+.profile-button, .lang-button {
     background-color: rgb(50, 98, 174);
     border: none;
     color: white;
-    width: 150px;
+    width: 100px;
     padding: 10px 12px;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 12px;
+    text-align: center;
+    margin-left: 10px;
 }
 
-.profile-button:hover {
+.profile-button:hover, .lang-button:hover {
     background-color: white;
     color: rgb(50, 98, 174);
     font-weight: bold;
@@ -74,7 +78,7 @@ header {
         display: flex;
         align-items: center;
     }
-    
+
     .header-middle-section {
         display: none;
     }
@@ -93,18 +97,16 @@ header {
     }
 
     .header-right-section {
-        text-align: center; 
+        display: flex; /* Ensure buttons are displayed in a row */
+        align-items: center; 
+        padding-right: 10px; /* Adjust right padding */
     }
 
-    .header-right-section .profile-button {
-        display: inline-block; 
-        margin: 0 auto; 
-    }
-
-    .header-right-section .profile-button {
-        width: auto; 
-        padding: 0.3rem 0.6rem; 
-        font-size: 0.8rem; 
+    .profile-button, .lang-button {
+        width: 70px; /* Adjust width for mobile */
+        padding: 8px 10px; /* Slightly reduced padding */
+        font-size: 8px; /* Adjust font size for mobile */
+        margin-left: 5px; /* Reduced margin for tighter spacing */
     }
 
     .header-middle-section.active {
@@ -115,15 +117,15 @@ header {
         width: 100%;
         background-color: rgb(50, 98, 174); 
         text-align: center;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for dropdown */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
         z-index: 900;
     }
 
     .header-middle-section.active a {
         display: block;
         padding: 10px 0;
-        color: white; /* Link color */
-        text-decoration: none; /* Remove underline */
+        color: white; 
+        text-decoration: none; 
     }
 
     .header-middle-section.active a:hover {

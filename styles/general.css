@@ -6,7 +6,16 @@
 body{
     background-color: rgb(50, 98, 174);
     height: 3000px;
+    direction: ltr; 
 }
 a{
     text-decoration: none;
+}
+.arabic {
+    direction: rtl; /* Right-to-left for Arabic */
+    text-align: right; /* Align Arabic text to the right */
+}
+
+.hidden {
+    display: none; /* Utility class to hide elements */
 }

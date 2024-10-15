@@ -33,21 +33,28 @@
         </div>
         <div class="header-right-section">
             <a href="files/Company profile English .pdf" download="Sehatak_Profile.pdf" class="profile-button">Sehatak Profile</a>
+            <div class="language-switcher">
+                <button onclick="switchLanguage('en')" class="lang-button">English</button>
+                <button onclick="switchLanguage('ar')" class="lang-button">العربية</button>
+            </div>
         </div>
+
     </header>
 
     <div class="home-section" id="home-section">
         <div class="home-left-side">
-
-            <div class="title">Welcome to Sehatak</div>
-            <div class="sentence">Your gateway to a healthy and balanced life.</div>
+            <div class="title en">Welcome to Sehatak</div>
+            <div class="title arabic hidden">مرحباً بكم في صحتك</div>
+            <div class="sentence en">Your gateway to a healthy and balanced life.</div>
+            <div class="sentence arabic hidden">بوابتك لحياة صحية ومتوازنة.</div>
             <div class="home-button">
-
-                <a href="#about-section" class="start-button">Get Started</a>
+                <a href="#about-section" class="start-button en">Get Started</a>
+                <a href="#about-section" class="start-button arabic hidden">ابدأ الآن</a>
             </div>
         </div>
     </div>
 
     <script src="scripts/script.js"></script>
+
 </body>
 </html>
